@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/images/blog_logo.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">JiaojDoraemon</a></h1>
@@ -68,10 +68,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -82,6 +78,8 @@
 					<a class="github" target="_blank" href="https://github.com/JiaojDoraemon" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/topic/19574179/hot" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+					<a class="weibo" target="_blank" href="https://www.weibo.com/u/3795352804/home?wvr=5" title="weibo"><i class="icon-weibo"></i></a>
 		        
 			</div>
 		</nav>
@@ -99,7 +97,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/images/blog_logo.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">JiaojDoraemon</h1>
@@ -121,6 +119,8 @@
 						<a class="github" target="_blank" href="https://github.com/JiaojDoraemon" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/topic/19574179/hot" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="weibo" target="_blank" href="https://www.weibo.com/u/3795352804/home?wvr=5" title="weibo"><i class="icon-weibo"></i></a>
 			        
 				</div>
 			</nav>
@@ -150,19 +150,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Hexo-GitHub-搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/28/我的第一篇博客文章/">我的第一篇博客文章</a>
+      <a class="article-title" href="/2019/08/28/Hexo-GitHub-搭建个人博客/">初学者搭建博客</a>
     </h1>
   
 
         
-        <a href="/2019/08/28/我的第一篇博客文章/" class="archive-article-date">
+        <a href="/2019/08/28/Hexo-GitHub-搭建个人博客/" class="archive-article-date">
   	<time datetime="2019-08-28T15:30:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
 </a>
         
@@ -170,10 +170,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一章<br>内容</p>
-<hr>
-<p>##第二章</p>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>##参考文献</p>
+        <p>使用的是Hexo+GitHub搭建的，虽然会有点慢，但是可以不用买域名，哈哈哈<br>终于搭建出自己的博客啦，现在我就记录一下搭建博客的整个过程，过程简单，有些地方描述可能不太到位，如果有人看见，有不懂的地方可以<br>自己摸索啦，哈哈哈哈，或者推荐去bilibili看CodeSheep的讲解，过程超级详细，我们刚开始搭建当然不会做得很好啦，我就是搭建了两次才成功，<br>因为开始有些东西没有准备好，所以在中途出现了一些问题，所以<strong>不用怕做错，做错了大不了重来，一次不行我们就两次，两次不行就三次，只要不放弃，总会有成功得时候，加油！！！</strong><br>这是对我说的，也是对屏幕前的你说的，相信自己，总会成功！但是得努力哦，就算努力的过程比较缓慢，但也比原地不动，直接放弃得好</p>
+<h2 id="第一步：windows环境"><a href="#第一步：windows环境" class="headerlink" title="第一步：windows环境"></a>第一步：windows环境</h2><p>windows和mac的步骤一样，但是命令有些不同，在下面过程中有特殊不同的地方我会讲解，如有没有涉及到的可以自己去搜索~</p>
+<ol>
+<li>安装node.js：<br>下载地址中文网站（<a href="https://nodejs.org/zh-cn/download/）" target="_blank" rel="noopener">https://nodejs.org/zh-cn/download/）</a><br>英文网站（<a href="https://nodejs.org/en/）" target="_blank" rel="noopener">https://nodejs.org/en/）</a><br>傻瓜式安装哦~<br>现在安装完了，我们可以检查一下是否有安装成功：输入命令（node -v）  有版本号就是安装成功哦<br>进入控制台</li>
+<li>安装git：下载地址（<a href="https://git-scm.com）" target="_blank" rel="noopener">https://git-scm.com）</a><br>建议纯英文安装路径，如：D:\software<br>检查是否按装成功：桌面点击鼠标右键，新增出现git bash和git here选项就是安装成功了</li>
+<li>安装Hexo<br>建议先安装国内镜像（nmp install -g cnpm –registry-<a href="https://registry.npm.taobao.org）" target="_blank" rel="noopener">https://registry.npm.taobao.org）</a>  就会自动安装啦<br>检查安装成功：输入命令（cnpm -v）<br>下面就是正式安装Hexo咯：<br>输入命令（cnpm install -g hexo-cli）就会自己下载啦<br>检查：输入（hexo -v）  出现以下信息就是安装成功了</li>
+<li>现在没有GitHub账号就可以去注册一个，有的话就可以忽略此步骤</li>
+<li>一切工作准备就绪，下面就可以开始我们正式的工作了</li>
+<li>1.在你喜欢的目录下建立一个文件，文件名随便起（eg:blog）<br>怎么进入目录呢？对于什么都不是很清楚的你来说可能会需要帮助了，我们可以先进入一个盘，D盘，E盘随便，或者你就想在C盘也行，<br>假如要在D盘的一个文件夹下建立blog文件：直接输入D/d 然后回车这样我们就进入了D盘啦；然后命令 cd 你想要进入的文件夹（work）<br>这样就进入了你想要进入的文件夹了,输入命令（mkdir blog）这样一个blog文件夹就建立成功。（还有一种方法是不用输入命令直接建立文件，<br>然后我们在目录栏点击全选后敲击键盘cmd就直接进入想要的文件夹下面了）， mac需要检查一下是否进入blog，输入命令（pwd）出现正常<br>路径，则已进入blog</li>
+<li>2.我们下面就用hexo生成博客<br>首先初始化一个博客：输入命令（hexo init）/mac可能需要以管理员的身份操作，这样我们就输入命令（sudo hexo init），这就是以管理员的<br>身份初始化这个博客，等待一会后会提示信息：Start blogging with hexo，这样就是安装成功了，我们可以使用命令（dir）查看一下文件目录<br>下都生成了什么/mac输入命令（ls -l）</li>
+<li>下面启动hexo：输入命令（hexo s）跑完会有一个localhost:4000的端口，我们在浏览器中访问他，恭喜你，博客搭建成功了</li>
+<li>我们来新建一片文章：输入命令（hexo new “文章名”）<br>打开看是否创建成功：输入（dir）/mac输入（ls）<br>我们会发现有一个文件source，我们进入这个文件下的_posts文件：输入命令（cd source/_posts/）<br>输入（dir）/mac输入（ls -l）<br>会发现目录下有两个文件，我们创建的博文就会出现在你眼前啦，我们来打开他：输入命令（文件名 a.txt）/mac输入（vim 文件名）,现在就可以<br>写博文了，是基于markdown格式的语法，推荐去了解看一下（<a href="https://www.jianshu.com/p/191d1e21f7ed）" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed）</a><br>编写完就可以保存退出，直接×掉就可以了/mac就输入命令（：wq）</li>
+<li>我们退回到blog目录：输入命令（cd../..）</li>
+<li>输入命令（hexo clean）清理一下</li>
+<li>输入命令（hexo g）生成</li>
+<li>输入命令（hexo s）重新启动一下，刷新刚开进入的端口，就发现你写的内容就出现在博客上啦<br>我们现在来把我们的博客推送出去</li>
+<li>到我们的GitHub上新建立一个仓库，名字必须是（你的昵称。github.io）如我的 （JiaojDoraemon.github.io）</li>
+<li>继续回到命令行下，输入命令（cnpm install –save heo-deployer-git）等待安装完，忽略waring</li>
+<li>下面设置一下_config文件的内容，输入命令（dir）检查是否存在/mac输入（ls）<br>和打开博文一样的命令（_config.yml a.txt）/mac就用（vim _config.yml），拉到文件最低部，我们将会看到Deployment的配置，添加以下信息<br>type: git<br>repo: <a href="https://github.com/JiaojDoraemon/JiaojDoraemon.github.io.git" target="_blank" rel="noopener">https://github.com/JiaojDoraemon/JiaojDoraemon.github.io.git</a>  （这里是刚才在GitHub中创建的地址哦<del>）<br>branch: master<br>保存退出，和之前写博文一样的，我这里就不再复述咯</del></li>
+<li>部署到远端：输入命令（hexo d）,会弹出信息让你输入GitHub的账号和密码，正常输入就ok啦</li>
+<li>访问他出现的网站，我们就进入可以远端访问了<br>一个博客就搭建完成了<br>我们可以自定义一个主题</li>
+</ol>
 
       
 
@@ -186,7 +204,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/28/我的第一篇博客文章/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/08/28/Hexo-GitHub-搭建个人博客/">展开全文 >></a>
         </p>
       
 
@@ -345,25 +363,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -427,43 +437,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">只要你愿意&lt;br&gt;&lt;br&gt;可以了解我</div>
   	  	
     	</section>
     
