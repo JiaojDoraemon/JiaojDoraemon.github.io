@@ -15,10 +15,12 @@
 <meta property="og:site_name" content="JiaojDoraemon">
 <meta property="og:description" content="使用的是Hexo+GitHub搭建的，虽然会有点慢，但是可以不用买域名，哈哈哈终于搭建出自己的博客啦，现在我就记录一下搭建博客的整个过程，过程简单，有些地方描述可能不太到位，如果有人看见，有不懂的地方可以自己摸索啦，哈哈哈哈，或者推荐去bilibili看CodeSheep的讲解，过程超级详细，我们刚开始搭建当然不会做得很好啦，我就是搭建了两次才成功，因为开始有些东西没有准备好，所以在中途出现了一些">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-04T07:46:14.801Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/28/Hexo-GitHub-搭建个人博客/node_v.gif">
+<meta property="og:updated_time" content="2019-09-05T03:05:14.306Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初学者搭建博客">
 <meta name="twitter:description" content="使用的是Hexo+GitHub搭建的，虽然会有点慢，但是可以不用买域名，哈哈哈终于搭建出自己的博客啦，现在我就记录一下搭建博客的整个过程，过程简单，有些地方描述可能不太到位，如果有人看见，有不懂的地方可以自己摸索啦，哈哈哈哈，或者推荐去bilibili看CodeSheep的讲解，过程超级详细，我们刚开始搭建当然不会做得很好啦，我就是搭建了两次才成功，因为开始有些东西没有准备好，所以在中途出现了一些">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/28/Hexo-GitHub-搭建个人博客/node_v.gif">
   
     <link rel="alternative" href="/atom.xml" title="JiaojDoraemon" type="application/atom+xml">
   
@@ -60,8 +62,6 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/随笔/">随笔</a></li>
-	        
-				<li><a href="/有料/">有料</a></li>
 	        
 			</ul>
 		</nav>
@@ -113,8 +113,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -130,14 +128,12 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 70%">
+				<ul style="width: 50%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
-		        
-					<li style="width: 33.333333333333336%"><a href="/有料/">有料</a></li>
+					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -175,7 +171,8 @@
         <p>使用的是Hexo+GitHub搭建的，虽然会有点慢，但是可以不用买域名，哈哈哈<br>终于搭建出自己的博客啦，现在我就记录一下搭建博客的整个过程，过程简单，有些地方描述可能不太到位，如果有人看见，有不懂的地方可以<br>自己摸索啦，哈哈哈哈，或者推荐去bilibili看CodeSheep的讲解，过程超级详细，我们刚开始搭建当然不会做得很好啦，我就是搭建了两次才成功，<br>因为开始有些东西没有准备好，所以在中途出现了一些问题，所以<strong>不用怕做错，做错了大不了重来，一次不行我们就两次，两次不行就三次，只要不放弃，总会有成功得时候，加油！！！</strong><br>这是对我说的，也是对屏幕前的你说的，相信自己，总会成功！但是得努力哦，就算努力的过程比较缓慢，但也比原地不动，直接放弃得好</p>
 <h2 id="第一步：windows环境"><a href="#第一步：windows环境" class="headerlink" title="第一步：windows环境"></a>第一步：windows环境</h2><p>windows和mac的步骤一样，但是命令有些不同，在下面过程中有特殊不同的地方我会讲解，如有没有涉及到的可以自己去搜索~</p>
 <ol>
-<li>安装node.js：<br>下载地址中文网站（<a href="https://nodejs.org/zh-cn/download/）" target="_blank" rel="noopener">https://nodejs.org/zh-cn/download/）</a><br>英文网站（<a href="https://nodejs.org/en/）" target="_blank" rel="noopener">https://nodejs.org/en/）</a><br>傻瓜式安装哦~<br>现在安装完了，我们可以检查一下是否有安装成功：输入命令（node -v）  有版本号就是安装成功哦<br>进入控制台</li>
+<li>安装node.js：<br>下载地址中文网站（<a href="https://nodejs.org/zh-cn/download/）" target="_blank" rel="noopener">https://nodejs.org/zh-cn/download/）</a><br>英文网站（<a href="https://nodejs.org/en/）" target="_blank" rel="noopener">https://nodejs.org/en/）</a><br>傻瓜式安装哦~<br>现在安装完了，我们可以检查一下是否有安装成功：输入命令（node -v）  有版本号就是安装成功哦 
+<img src="node_v.gif" alt=" "></li>
 <li>安装git：下载地址（<a href="https://git-scm.com）" target="_blank" rel="noopener">https://git-scm.com）</a><br>建议纯英文安装路径，如：D:\software<br>检查是否按装成功：桌面点击鼠标右键，新增出现git bash和git here选项就是安装成功了</li>
 <li>安装Hexo<br>建议先安装国内镜像（nmp install -g cnpm –registry-<a href="https://registry.npm.taobao.org）" target="_blank" rel="noopener">https://registry.npm.taobao.org）</a>  就会自动安装啦<br>检查安装成功：输入命令（cnpm -v）<br>下面就是正式安装Hexo咯：<br>输入命令（cnpm install -g hexo-cli）就会自己下载啦<br>检查：输入（hexo -v）  出现以下信息就是安装成功了</li>
 <li>现在没有GitHub账号就可以去注册一个，有的话就可以忽略此步骤</li>
@@ -454,7 +451,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只要你愿意&lt;br&gt;&lt;br&gt;可以了解我</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">97的狮子座妹纸一枚&lt;/br&gt;正在健身减肥中，瘦了一点，还在努力~&lt;/br&gt;喜欢和朋友待在一起</div>
   	  	
     	</section>
     
